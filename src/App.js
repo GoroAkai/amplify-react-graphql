@@ -52,9 +52,15 @@ function App() {
             </a>
           </>
         ) : (
-          // showLogoがfalseならHello world!を表示
-          <h1>Hello world!</h1>
-        )}
+          // showLogoがfalseならHello world!とS3画像を表示
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <h1>Hello world!</h1>
+            <img
+              src="https://smarthouse-images-dev-577885025359.s3.ap-northeast-1.amazonaws.com/houses/house-001/1756974283923.png"
+              alt="S3画像"
+              style={{ height: '80px' }}
+            />
+          </div>)}
       </header>
     </div>
   );
